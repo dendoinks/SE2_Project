@@ -8,8 +8,8 @@ Due to GitHub's file size restrictions, the model files are not included in this
 
 You can download them here:
 
-- [model.safetensors (main model)](https://huggingface.co/your-username/your-repo/resolve/main/model.safetensors)
-- [model_roberta.safetensors (RoBERTa version)](https://huggingface.co/your-username/your-repo/resolve/main/model_roberta.safetensors)
+- [model.safetensors (main model)](https://drive.google.com/drive/folders/1UR8wY6VgU-r7s7JXV29vEEupzKZrUCY0?usp=drive_link)
+- [model_roberta.safetensors (RoBERTa version)]((https://drive.google.com/drive/folders/1WZ1ce5n6b0suLk9hv-V49jg6vwSmcAmt?usp=drive_link))
 
 > After downloading, place the files inside the appropriate folders:
 > - `saved_model/model.safetensors`
