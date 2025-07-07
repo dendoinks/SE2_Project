@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fake News Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="bg-particles" id="particles"></div>
+
+  <header>
+    <h1>Fake News Detection</h1>
+    <p>Advanced AI-Powered Analysis for Filipino Social Media</p>
+  </header>
+
+  <div class="container">
+    <div class="panel">
+      <h2>
+        <div class="icon">📝</div>
+        Submit Content
+      </h2>
+
+      <label for="textInput">Text Content</label>
+      <textarea id="textInput" rows="5" placeholder="Enter or paste your text content here for analysis..."></textarea>
+
+      <button id="analyzeBtn">
+        <span id="btnText">🔍 Analyze Content</span>
+      </button>
+    </div>
+
+    <div class="panel" id="resultPanel">
+      <h2>
+        <div class="icon">📊</div>
+        Detection Results
+      </h2>
+      <div class="result-waiting">
+        <strong>Ready to analyze your content</strong><br>
+        <small>Submit content using the form on the left to get started</small>
+      </div>
+
+      <!-- New Section for Explanation -->
+      <div class="result-reasons" id="resultReasons" style="display: none;">
+        <h3>Reasons for Classification:</h3>
+        <ul id="reasonsList"></ul>
+      </div>
+    </div>
+
+    <div class="instructions-section">
+      <!-- Main Instructions Panel -->
+      <div class="instructions">
+        <h3>
+          <div class="icon" style="background: linear-gradient(135deg, #48bb78, #38a169);">ℹ️</div>
+          How to Use This Tool
+        </h3>
+        <ul>
+          <li>Enter text directly into the text area for immediate processing</li>
+          <li>The AI will analyze language patterns, fact-check claims, and assess credibility</li>
+          <li>Results include confidence scores and detailed explanations</li>
+        </ul>
+        
+        <div class="demo-image">
+          <div class="demo-placeholder">
+            <div>
+              📱 Demo Interface Screenshot<br>
+              <small style="opacity: 0.7;">Visual guide coming soon</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Limitations and Best Practices Grid -->
+      <div class="limitations-grid">
+        <div class="limitations-panel">
+          <h3>
+            <div class="icon" style="background: linear-gradient(135deg, #e53e3e, #c53030);">⚠️</div>
+            Unsupported Content Types
+          </h3>
+          <ul class="unsupported-list">
+            <li>Video files and video content from social media posts</li>
+            <li>Heavily edited images with distorted or stylized text</li>
+            <li>Audio files or voice recordings</li>
+            <li>Images with text in non-Filipino or non-English languages</li>
+            <li>Blurry or low-resolution images where text is illegible</li>
+            <li>GIFs or animated content (only static frames will be analyzed)</li>
+          </ul>
+        </div>
+
+        <div class="best-practices-panel">
+          <h3>
+            <div class="icon" style="background: linear-gradient(135deg, #d69e2e, #b7791f);">💡</div>
+            Best Practices
+          </h3>
+          <ul class="best-practices-list">
+            <li>Copy-paste text directly when possible for highest accuracy</li>
+            <li>Provide complete context - longer text yields better analysis</li>
+            <li>Use standard fonts and avoid heavily stylized text in images</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Fake News Detection Project | Powered by Advanced AI Technology</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
